@@ -24,8 +24,8 @@ Số tính bằng `src/lab13.py`. Mọi con số tính từ cột `_simulated` g
 | Chi phí mỗi việc thành công | 4.472 | Tổng chi phí ÷ 978 | simulated |
 | Hoá đơn token và tool chia cho số yêu cầu | 274,65 | (245.585 + 84.000) ÷ 1.200 | đo từ trace |
 
-- Chi phí mỗi việc thành công gấp bao nhiêu lần "hoá đơn chia số yêu cầu"? Gấp **16,28 lần** (`simulated`).
-- Khoản nào chiếm tỉ trọng lớn nhất trong tổng chi phí, bao nhiêu phần trăm? **Làm lại** chiếm tỉ trọng lớn nhất, **51,77%** tổng chi phí (`simulated`).
+- Chi phí mỗi việc thành công gấp **16,28 lần** hoá đơn token và tool bình quân (`simulated`).
+- Làm lại chiếm tỉ trọng lớn nhất, **51,77%** tổng chi phí (`simulated`).
 
 ## A3 · Tách theo loại yêu cầu
 
@@ -36,16 +36,16 @@ Số tính bằng `src/lab13.py`. Mọi con số tính từ cột `_simulated` g
 | quoc_te | 150 | 27,3% | 2,32 | 22.515 đ (`simulated`) | 1,88× (`simulated`) |
 | doi_tac | 68 | 54,4% | 1,88 | 10.215 đ (`simulated`) | 0,85× (`simulated`) |
 
-- Loại nào không đáng để trợ lý xử lý? Với loại đó, cho chạy lại tới 3 lần có giúp không? Quốc tế chưa đáng đưa vào pilot. Với giới hạn 3 lượt, nhóm này dùng trung bình 2,32 lượt/yêu cầu mà chỉ thành công 27,3%, với chi phí 22.515 đ/việc thành công (`simulated`), gấp 1,88 lần mức tự làm.
+- Quốc tế chưa đáng đưa vào pilot. Với giới hạn 3 lượt, nhóm này dùng trung bình 2,32 lượt/yêu cầu mà chỉ thành công 27,3%, với chi phí 22.515 đ/việc thành công (`simulated`), gấp 1,88 lần mức tự làm.
 
 ## A4 · Chi phí cố định (phạm vi noi_dia + hang_nang)
 
 | Khối lượng | Việc thành công mỗi tháng | Chi phí cố định mỗi việc | Chi phí mỗi việc thành công + cố định | So với 12.000 đ |
 | --- | ---: | ---: | ---: | ---: |
 | 45.000 yêu cầu/tháng | 33.750 | 1.185 đ | ≈ 4.599 đ (`simulated`) | 0,38× (`simulated`) |
-| 22.500 yêu cầu/tháng (Một nửa khối lượng) | 16.875 | 2.370 đ | ≈ 5.784 đ (`simulated`) | 0,48× (`simulated`) |
+| 22.500 yêu cầu/tháng | 16.875 | 2.370 đ | ≈ 5.784 đ (`simulated`) | 0,48× (`simulated`) |
 
-- Chi phí cố định có đổi kết luận không? Ở khối lượng nào? Không đổi kết luận: với 900/1.200 việc thành công thuộc phạm vi pilot (75%), cộng vào CPS 3.414 đ (`simulated`) thì cả 45.000 và 22.500 yêu cầu/tháng đều dưới 12.000 đ (0,38× và 0,48×).
+- Tính tay từ A3 và A4: 900/1.200 yêu cầu thành công thuộc phạm vi pilot; lấy 75% tổng lượng tháng để chia 40 triệu đồng. Cộng vào CPS 3.414 đ (`simulated`), cả hai mức vẫn dưới 12.000 đ.
 
 ## B1 · Đổi từng yếu tố
 
@@ -63,8 +63,8 @@ Số tính bằng `src/lab13.py`. Mọi con số tính từ cột `_simulated` g
 
 ## B2 · Đổi một cặp và xếp hạng
 
-- Giá token gấp đôi cùng lúc tỉ lệ xem lại gấp đôi: **6.543 đ/việc thành công, tăng 46,3%** (`simulated`). Hai tác động cộng lại vì các khoản chi phí cộng tuyến tính.
-- Xếp hạng ba yếu tố ảnh hưởng mạnh nhất: 1. Làm lại (+51,8%) · 2. Xem lại (+40,7%) · 3. Lương nhân viên (+23,1%). Các mức thay đổi đều là `simulated`.
+- Giá token và tỉ lệ xem lại cùng gấp đôi: **6.543 đ/việc thành công, tăng 46,3%** (`simulated`). Hai tác động cộng lại vì các khoản chi phí cộng tuyến tính.
+- Ba yếu tố ảnh hưởng mạnh nhất: 1. Làm lại (+51,8%) · 2. Xem lại (+40,7%) · 3. Lương nhân viên (+23,1%). Các mức thay đổi đều là `simulated`.
 
 ## B3 · Giới hạn chạy lại có thật sự rẻ hơn
 
@@ -74,9 +74,9 @@ Số tính bằng `src/lab13.py`. Mọi con số tính từ cột `_simulated` g
 | 2 lần | 4.093.220 đ (`simulated`) | 234 | 6.901.220 đ (`simulated`) | 4.237 đ (`simulated`) |
 | 3 lần | 4.373.585 đ (`simulated`) | 222 | 7.037.585 đ (`simulated`) | 4.472 đ (`simulated`) |
 
-- Giới hạn nào rẻ nhất cho công ty? Có trùng với giới hạn cho chi phí mỗi việc thành công thấp nhất không? Tối đa 2 lượt rẻ nhất cho công ty (6.901.220 đ, `simulated`). Không trùng với giới hạn 1 lượt cho CPS thấp nhất (4.111 đ, `simulated`, thêm 85 yêu cầu nhân viên tự xử lý).
+- Tối đa 2 lượt rẻ nhất cho công ty (6.901.220 đ, `simulated`). Giới hạn 1 lượt cho CPS thấp nhất (4.111 đ, `simulated`) và có thêm 85 yêu cầu để nhân viên xử lý so với giới hạn 2 lượt.
 
 ## B4 · Nếu phải xem lại tất cả
 
-- Chi phí mỗi việc thành công khi xem lại 100% (`noi_dia` + `hang_nang`), so với 12.000 đ: **11.743 đ/việc thành công** (0,98×) nếu làm lại 9 phút/ca, hoặc **12.415 đ** (1,03×) nếu làm lại 15,3 phút/ca (`simulated`).
-- Kết quả này nói gì về thứ pilot cần học được? Pilot cần đo thời gian xem lại, thời gian làm lại và tỉ lệ xem lại có thể giảm an toàn; ngưỡng hòa vốn khi xem lại 100% là **5,1 phút** hoặc **4,8 phút/yêu cầu** (`simulated`).
+- Xem lại cả 948 yêu cầu có kết quả: **11.743 đ/việc thành công** (0,98×) nếu làm lại 9 phút/ca, hoặc **12.415 đ** (1,03×) nếu làm lại 15,3 phút/ca. Cả hai kịch bản là `simulated`.
+- Pilot cần đo thời gian xem lại, thời gian làm lại và tỉ lệ xem lại có thể giảm an toàn. Với xem lại 100%, ngưỡng hòa vốn là **5,1 phút/yêu cầu** hoặc **4,8 phút/yêu cầu** tương ứng (`simulated`).
