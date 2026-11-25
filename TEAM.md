@@ -14,7 +14,7 @@
 |   1 | Nguyễn Ngọc Vinh | 2A202603877 | 26ai.vinhnn2@vinuni.edu.vn | cuakicuc4444 | Người viết code phần A và B |
 |   2 | Nguyễn Lâm Tùng | 2A202603854 | 26ai.tungnl2@vinuni.edu.vn | nlamtung | Người kiểm số và lập kế hoạch pilot (D) |
 |   3 | Đỗ Duy Tùng | 2A202603844 | 26ai.tungdd@vinuni.edu.vn | Presceltooo | Người gắn nhãn 1 (Phân tích lỗi - C) |
-|   4 | Nguyễn Tùng Dương |2A202603850 | nguyenduong342003@gmail.com | | Người gắn nhãn 2, kiêm giữ hồ sơ (E) |
+|   4 | Nguyễn Tùng Dương |2A202603850 | nguyenduong342003@gmail.com | nguyenduong43| Người gắn nhãn 2, kiêm giữ hồ sơ (E) |
 
 Bốn vai của lab:
 
@@ -82,7 +82,7 @@ Sao chép mục dưới đây cho từng thành viên.
 
 - [Bảng lỗi](report/team/bang_loi.md) và [báo cáo cá nhân](report/team/2A202603844_DoDuyTung.md).
 
-## Nguyễn Tùng Dương
+## Nguyễn Tùng Dương (2A202603850)
 
 ### Phần việc phụ trách
 
@@ -96,4 +96,4 @@ Sao chép mục dưới đây cho từng thành viên.
 
 ### Bằng chứng
 
-- [Bảng lỗi](report/team/bang_loi.md), [đặc tả chỉ số](report/team/chi_so.md), [hồ sơ launch v0](report/team/ho_so_launch_v0.md) và [báo cáo nhóm](report/team/group_report.md).
+- [Bảng lỗi](report/team/bang_loi.md), [đặc tả chỉ số](report/team/chi_so.md), [hồ sơ launch v0](report/team/ho_so_launch_v0.md), [báo cáo cá nhân](report/team/2A202603850_NguyenTungDuong.md) và [báo cáo nhóm](report/team/group_report.md).
