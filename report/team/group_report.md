@@ -47,8 +47,8 @@ Chi tiết đóng góp của từng thành viên nằm trong `TEAM.md`.
 
 - **Nguyễn Ngọc Vinh (2A202603877):** Phụ trách code và kiểm tra kết quả A1–A4, B1–B4. [Báo cáo cá nhân](2A202603877_NguyenNgocVinh.md).
 - **Nguyễn Lâm Tùng (2A202603854):** Phụ trách kiểm số A–B, code cỡ mẫu D1 và lập kế hoạch [pilot_plan.yaml](pilot_plan.yaml). [Báo cáo cá nhân](2A202603854_NguyenLamTung.md).
-- **Thành viên 3:** Phụ trách gắn nhãn độc lập bộ 1 và hoàn thiện bảng lỗi [bang_loi.md](bang_loi.md).
-- **Nguyễn Tùng Dương:** Phụ trách gắn nhãn độc lập bộ 2, đặc tả chỉ số & event [chi_so.md](chi_so.md), xây dựng và hoàn thiện [hồ sơ launch v0](ho_so_launch_v0.md), tổng hợp báo cáo nhóm.
+- **Đỗ Duy Tùng (2A202603844):** Phụ trách gắn nhãn độc lập bộ 1 và hoàn thiện bảng lỗi [bang_loi.md](bang_loi.md). [Báo cáo cá nhân](2A202603844_DoDuyTung.md).
+- **Nguyễn Tùng Dương (2A202603850):** Phụ trách gắn nhãn độc lập bộ 2, đặc tả chỉ số & event [chi_so.md](chi_so.md), xây dựng và hoàn thiện [hồ sơ launch v0](ho_so_launch_v0.md), viết [báo cáo cá nhân](2A202603850_NguyenTungDuong.md) và tổng hợp báo cáo nhóm.
 
 ## 7. Hạn chế và hướng cải thiện
 
