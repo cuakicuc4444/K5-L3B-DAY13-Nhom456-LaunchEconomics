@@ -13,7 +13,7 @@
 | --: | ------ | ---- | ----- | ------ | ------- |
 |   1 | Nguyễn Ngọc Vinh | 2A202603877 | 26ai.vinhnn2@vinuni.edu.vn | cuakicuc4444 | Người viết code phần A và B |
 |   2 |        |      |       |        |         |
-|   3 |        |      |       |        |         |
+|   3 | Đỗ Duy Tùng | 2A202603844 | 26ai.tungdd@vinuni.edu.vn | Presceltooo | Người gắn nhãn 1 (Phân tích lỗi - C) |
 |   4 |        |      |       |        |         |
 
 Bốn vai của lab:
