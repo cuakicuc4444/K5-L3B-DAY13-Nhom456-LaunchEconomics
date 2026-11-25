@@ -4,7 +4,7 @@
 
 ## Hai bộ nhãn độc lập
 
-Người gắn nhãn 1: Đỗ Duy Tùng (2A202603844) · Người gắn nhãn 2: Người số 4 (gắn trong 8 phút, không trao đổi)
+Người gắn nhãn 1: Đỗ Duy Tùng (2A202603844) · Người gắn nhãn 2: Nguyễn Tùng Dương (gắn trong 8 phút, không trao đổi)
 
 | Ca | Nhãn người 1 | Nhãn người 2 | Trùng? | Nhãn thống nhất |
 | --: | --- | --- | --- | --- |
