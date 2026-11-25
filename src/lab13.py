@@ -76,6 +76,51 @@ def mo_hinh(runs, reqs, gia_vao=26, gia_ra=130, gia_tool=15, luong_phut=2000,
     }
 
 
+def co_mau(p1, p2, alpha=0.05, power=0.8):
+    """Cỡ mẫu mỗi nhóm khi so hai tỉ lệ p1, p2."""
+    from statistics import NormalDist
+    za = NormalDist().inv_cdf(1 - alpha / 2)
+    zb = NormalDist().inv_cdf(power)
+    pb = (p1 + p2) / 2
+    return math.ceil(
+        (za * math.sqrt(2 * pb * (1 - pb)) + zb * math.sqrt(p1 * (1 - p1) + p2 * (1 - p2))) ** 2
+        / (p2 - p1) ** 2
+    )
+
+
+def nhiem_vu_d(reqs, icc=0.02):
+    """Tính toán cỡ mẫu D1 và tỉ lệ mở lại 7 ngày hiện tại cho kế hoạch pilot."""
+    from statistics import NormalDist
+    n_req = co_mau(0.70, 0.75)
+    m_staff = 75
+    de_75 = 1 + (m_staff - 1) * icc
+    n_staff_75 = math.ceil(n_req * de_75)
+    c_needed_75 = math.ceil(n_staff_75 / m_staff)
+    max_20_staff = int(20 / icc)
+    max_6_depot = int(6 / icc)
+
+    n_6pt = co_mau(0.70, 0.76)
+    m_min_6pt = math.ceil(n_6pt * (1 - icc) / (20 - n_6pt * icc))
+    de_6pt = 1 + (m_min_6pt - 1) * icc
+
+    z_crit = NormalDist().inv_cdf(1 - 0.05 / 2)
+    se_null = math.sqrt(2 * 0.725 * 0.275 / n_6pt)
+    se_alt = math.sqrt((0.70 * 0.30 + 0.75 * 0.25) / n_6pt)
+    power_at_5pt = 1 - NormalDist().cdf((z_crit * se_null - 0.05) / se_alt)
+
+    reopen_all = reqs['mo_lai_trong_7_ngay'].mean()
+    sub = reqs[reqs['loai'].isin(['noi_dia', 'hang_nang'])]
+    reopen_sub = sub['mo_lai_trong_7_ngay'].mean()
+
+    print('\n--- Nhiệm vụ D1 · Cỡ mẫu & Tỉ lệ mở lại ---')
+    print(f'a) Chia theo yêu cầu (MDE 5 điểm): {n_req} yêu cầu/nhóm')
+    print(f'b) Theo nhân viên, m=75: DE={de_75:.2f}, n={n_staff_75}/nhóm -> {c_needed_75} người/nhóm (tổng {2*c_needed_75} > 40)')
+    print(f'c) 20 nhân viên/nhóm: tối đa {max_20_staff} < {n_req} (không đạt)')
+    print(f'd) 6 depot/nhóm: tối đa {max_6_depot} < {n_req} (không đạt)')
+    print(f'e) MDE 6 điểm ({n_6pt}/nhóm), 20 nhân viên/nhóm: m >= {m_min_6pt}, DE={de_6pt:.2f}, power tại 5 điểm = {power_at_5pt:.2f}')
+    print(f'Tỉ lệ mo_lai_trong_7_ngay: toàn bộ {reopen_all:.2%} ({int(reqs["mo_lai_trong_7_ngay"].sum())}/{len(reqs)}), noi_dia+hang_nang {reopen_sub:.2%} ({int(sub["mo_lai_trong_7_ngay"].sum())}/{len(sub)})')
+
+
 if __name__ == '__main__':
     runs = pd.read_csv('logix_runs.csv')
     reqs = pd.read_csv('logix_requests.csv', keep_default_na=False)
@@ -177,5 +222,4 @@ if __name__ == '__main__':
               f'xem lại hòa vốn ở {phut_hoa_von:.1f} phút/yêu cầu')
 
     # TODO CP4 · Nhiệm vụ D: cỡ mẫu.
-    #   from statsmodels.stats.proportion import proportion_effectsize
-    #   from statsmodels.stats.power import NormalIndPower
+    nhiem_vu_d(reqs)
