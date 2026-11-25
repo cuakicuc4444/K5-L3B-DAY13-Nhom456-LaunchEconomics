@@ -12,7 +12,7 @@
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
 |   1 | Nguyễn Ngọc Vinh | 2A202603877 | 26ai.vinhnn2@vinuni.edu.vn | cuakicuc4444 | Người viết code phần A và B |
-|   2 | Nguyễn Lâm Tùng | | nlamtung.work@gmail.com | nlamtung | Người kiểm số và lập kế hoạch pilot (D) |
+|   2 | Nguyễn Lâm Tùng | 2A202603854 | 26ai.tungnl2@vinuni.edu.vn | nlamtung | Người kiểm số và lập kế hoạch pilot (D) |
 |   3 | Đỗ Duy Tùng | 2A202603844 | 26ai.tungdd@vinuni.edu.vn | Presceltooo | Người gắn nhãn 1 (Phân tích lỗi - C) |
 |   4 | Nguyễn Tùng Dương |2A202603850 | nguyenduong342003@gmail.com | | Người gắn nhãn 2, kiêm giữ hồ sơ (E) |
 
@@ -50,6 +50,22 @@ Sao chép mục dưới đây cho từng thành viên.
 ### Bằng chứng
 
 - [Code A–B](src/lab13.py), [bảng chi phí](report/team/bang_chi_phi.md) và [báo cáo cá nhân](report/team/2A202603877_NguyenNgocVinh.md). Ba phép thử A1 đều đạt (1,20 · 1,25 · 1,25).
+
+## Nguyễn Lâm Tùng (2A202603854)
+
+### Phần việc phụ trách
+
+- Người kiểm số (tính tay đối chiếu A–B, điền `bang_chi_phi.md`) và phụ trách lập kế hoạch pilot (nhiệm vụ D: code D1 trong `src/lab13.py` và hoàn thiện `report/team/pilot_plan.yaml`).
+
+### Đóng góp cụ thể
+
+- Tính tay đối chiếu các chỉ số A1–A4, B1–B4 (đặc biệt A4 phần bổ chi phí cố định 40 triệu đ/tháng trên 75% lượng thành công thuộc phạm vi pilot) và hoàn thiện bảng chi phí `report/team/bang_chi_phi.md`.
+- Viết hàm tính cỡ mẫu `co_mau` và `nhiem_vu_d` trong `src/lab13.py` cho 5 câu D1 và tỉ lệ `mo_lai_trong_7_ngay` hiện tại (`4,25%` toàn bộ, `3,97%` trong `noi_dia + hang_nang`).
+- Hoàn thiện `report/team/pilot_plan.yaml`: chọn đơn vị phân bổ `staff` (20 vs 20), chấp nhận đánh đổi MDE 6 điểm (`n = 859/nhóm`, `m >= 299`, `DE = 6,96`), trả lời 5 câu D2 và thiết lập 3 luật dừng định lượng đủ 4 vế.
+
+### Bằng chứng
+
+- [Code D1](src/lab13.py), [bảng chi phí](report/team/bang_chi_phi.md), [kế hoạch pilot](report/team/pilot_plan.yaml) và [báo cáo cá nhân](report/team/2A202603854_NguyenLamTung.md).
 
 ## Đỗ Duy Tùng (2A202603844)
 
